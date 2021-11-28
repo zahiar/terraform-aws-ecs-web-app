@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 module "my-web-app" {
-  source = "git::https://github.com/zahiar/terraform-aws-ecs-web-app.git"
+  source = "zahiar/ecs-web-app/aws"
 
   app-container-web-port = 8080
   app-cpu = 1024
